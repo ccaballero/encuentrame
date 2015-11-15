@@ -27,8 +27,24 @@
         <ion-content scroll="false">
             <map on-create="mapCreated(map)"></map>
         </ion-content>
-        <ion-footer-bar class="bar-dark">
+        <ion-footer-bar class="bar-ligt">
             <!--<a ng-click="centerOnMe()" class="button button-icon icon ion-navigate"></a>-->
+          
+            <div class="tabs tabs-icon-left">
+               <a class="tab-item">
+                 <i class="icon ion-search "></i>
+                   Producto
+               </a>
+               <a class="tab-item active" href="#">
+                 <i class="icon ion-star"></i>
+                   Mercado
+               </a>
+               <a class="tab-item">
+                  <i class="icon ion-gear-a"></i>
+                  Settings
+               </a>
+            </div>
+
         </ion-footer-bar>
     </body>
 </html>
