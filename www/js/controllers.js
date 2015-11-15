@@ -49,7 +49,7 @@ angular.module('starter.controllers',[])
 .controller('ShopsCtrl',function($scope,$stateParams){
 })
 .controller('MarketsCtrl',function($scope,$stateParams){
-    scope.markets=[
+    $scope.markets=[
         { title: '25 de Mayo', address: '25 de Mayo esq. Jordán' },
         { title: '27 de Mayo', address: '25 de Mayo esq. Jordán' },
         { title: 'Alejo Calatayud', address: 'Aroma esq. Lanza' },
@@ -62,11 +62,17 @@ angular.module('starter.controllers',[])
 .controller('DealsCtrl',function($scope,$stateParams){
     $scope.deals=[
         { title: 'Remate de Naranjas', shop: 1 },
+        { title: 'Remate de Naranjas', shop: 1 },
+        { title: 'Remate de Naranjas', shop: 1 },
+        { title: 'Remate de Naranjas', shop: 1 },
+        { title: 'Remate de Naranjas', shop: 1 },
+        { title: 'Remate de Naranjas', shop: 1 },
+        { title: 'Remate de Naranjas', shop: 1 },
     ];
 })
 .controller('MapCtrl',function($scope,$ionicLoading){
     $scope.mapCreated=function(map){
-/*        $scope.map=map;
+        $scope.map=map;
 
         map.data.loadGeoJson('maps/alejo-calatayud.json');
         map.data.setStyle({
@@ -80,11 +86,11 @@ angular.module('starter.controllers',[])
 
         map.data.addListener('mouseover',function(event){
             console.log('click');
-        });*/
+        });
     };
 
     $scope.centerOnMe=function(){
-/*        console.log("Centering");
+        console.log("Centering");
         if(!$scope.map){
             return;
         }
@@ -102,7 +108,7 @@ angular.module('starter.controllers',[])
             $scope.loading.hide();
         },function(error){
             alert('Unable to get location: ' + error.message);
-        });*/
+        });
     };
 });
 
