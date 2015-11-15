@@ -1,0 +1,27 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title">Registrarse</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeSignup()">Cerrar</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form ng-submit="processSignup()">
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" placeholder="Apellidos">
+                </label>
+                <label class="item item-input">
+                    <input type="text" placeholder="Nombres">
+                </label>
+                <label class="item item-input">
+                    <input type="text" placeholder="Correo Electrónico">
+                </label>
+                <label class="item">
+                    <button class="button button-block button-positive" type="submit">Registrarse</button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-modal-view>
+

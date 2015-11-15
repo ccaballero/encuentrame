@@ -50,10 +50,10 @@ angular.module('starter.directives',[])
                 map.mapTypes.set('map_style',styledMap);
                 map.setMapTypeId('map_style');
 
-                $scope.onCreate({map:map});
+                $scope.onCreate({
+                    map:map
+                });
 
-                // Stop the side bar from dragging when mousedown/tapdown
-                // on the map
                 google.maps.event.addDomListener($element[0],'mousedown',
                 function(e){
                     e.preventDefault();

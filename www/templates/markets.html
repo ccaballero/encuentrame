@@ -1,18 +1,17 @@
-<ion-view view-title="Busqueda">
+<ion-view view-title="Mercados">
     <ion-content>
         <div class="bar bar-header item-input-inset">
             <label class="item-input-wrapper">
                 <i class="icon ion-ios-search placeholder-icon"></i>
-                <input type="search" placeholder="Search" value="naranjas" />
+                <input type="search" placeholder="Search" value="cochabamba" />
             </label>
         </div>
         <ion-list>
-            <ion-item ng-repeat="shop in shops"
-                href="#/app/shops/{{shop.id}}">
-                <h2>{{shop.title}}</h2>
-                <p>{{shop.description}}</p>
+            <ion-item ng-repeat="market in markets"
+                href="#/app/articles/{{market.id}}">
+                <h2>{{market.title}}</h2>
+                <p>{{market.address}}</p>
             </ion-item>
         </ion-list>
     </ion-content>
 </ion-view>
-

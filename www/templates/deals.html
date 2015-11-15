@@ -1,4 +1,4 @@
-<ion-view view-title="Busqueda">
+<ion-view view-title="Ofertas">
     <ion-content>
         <div class="bar bar-header item-input-inset">
             <label class="item-input-wrapper">
@@ -7,10 +7,8 @@
             </label>
         </div>
         <ion-list>
-            <ion-item ng-repeat="shop in shops"
-                href="#/app/shops/{{shop.id}}">
-                <h2>{{shop.title}}</h2>
-                <p>{{shop.description}}</p>
+            <ion-item ng-repeat="deal in deals" href="#/app/shops/{{deal.shop}}">
+                {{deal.title}}
             </ion-item>
         </ion-list>
     </ion-content>

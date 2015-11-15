@@ -1,0 +1,24 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title">Ingresar</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeSignin()">Cerrar</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form ng-submit="processSignin()">
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" placeholder="Correo Electrónico" />
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="Contraseña" />
+                </label>
+                <label class="item">
+                    <button class="button button-block button-positive" type="submit">Ingresar</button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-modal-view>
+
